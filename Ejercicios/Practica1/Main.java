@@ -14,11 +14,11 @@ public class Main {
         Hilo hilo4 = new Hilo("Hilo 4", contador);
         Hilo hilo5 = new Hilo("Hilo 5", contador);
 
-        hilo1.start();
-        hilo2.start();
-        hilo3.start();
-        hilo4.start();
-        hilo5.start();
+        hilo1.startRunnable();
+        hilo2.startRunnable();
+        hilo3.startRunnable();
+        hilo4.startRunnable();
+        hilo5.startRunnable();
 
         System.out.println(contador.getValor());
     }

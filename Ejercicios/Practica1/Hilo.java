@@ -1,9 +1,10 @@
 package Ejercicios.Practica1;
 
-public class Hilo extends Thread {
+public class Hilo implements Runnable {
+    Thread hilo;
     Contador contador;
     public Hilo(String nombre, Contador contador) {
-        this.setName(nombre);
+        hilo = new Thread(this, nombre);
         this.contador = contador;
     }
 
@@ -12,6 +13,10 @@ public class Hilo extends Thread {
         for (int i = 0; i < 5000; i++) {
             contador.incrementar();
         }
-        System.out.println(getName() + " " + contador.getValor());
+        System.out.println(this.hilo.getName() + " " + contador.getValor());
+    }
+
+    public void startRunnable() {
+        hilo.start();
     }
 }
