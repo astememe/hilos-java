@@ -1,4 +1,4 @@
-package Ejercicios.Practica2.Ejercicio6;
+package Ejercicios.Practica2.Ejercicio_7;
 
 public class Contador extends Thread {
     private int contador;

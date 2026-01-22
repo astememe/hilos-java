@@ -1,4 +1,6 @@
-package Ejercicios.Practica2.Ejercicio7;
+package Ejercicios.Practica2.Ejercicio_6;
+
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +16,6 @@ public class Main {
 
         for (Contador contador: contadores) {
             contador.start();
-            contador.join();
         }
     }
 }
